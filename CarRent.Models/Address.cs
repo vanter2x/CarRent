@@ -2,7 +2,7 @@
 
 namespace CarRent.Models
 {
-    public class Address
+    public class Address: IEntity<int>
     {
         [Key]
         public int Id { get; set; }

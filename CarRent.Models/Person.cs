@@ -2,7 +2,7 @@
 
 namespace CarRent.Models
 {
-    public abstract class Person
+    public abstract class Person : IEntity<int>
     {
         [Key]
         public int Id { get; set; }

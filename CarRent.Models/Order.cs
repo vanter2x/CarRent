@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CarRent.Models
 {
-    public class Order
+    public class Order: IEntity<int>
     {
         [Key]
         public int Id { get; set; }
@@ -23,6 +23,5 @@ namespace CarRent.Models
         public virtual Worker Worker { get; set; }
         public virtual Client Client { get; set; }
         public virtual ICollection<Car> Cars { get; set; }
-
     }
 }
