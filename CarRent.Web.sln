@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRent.Web", "CarRent.Web\CarRent.Web.csproj", "{7C591836-A3EE-4FD7-9FEB-B1D2ED0CBE93}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRent.Models", "CarRent.Models\CarRent.Models.csproj", "{3A269AAD-EA11-4ED2-8CDE-74E8D9CF0419}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRent.Services", "CarRent.Services\CarRent.Services.csproj", "{1C1E8BF9-C14A-4898-806D-5DC7D3F40A13}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{7C591836-A3EE-4FD7-9FEB-B1D2ED0CBE93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C591836-A3EE-4FD7-9FEB-B1D2ED0CBE93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C591836-A3EE-4FD7-9FEB-B1D2ED0CBE93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A269AAD-EA11-4ED2-8CDE-74E8D9CF0419}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A269AAD-EA11-4ED2-8CDE-74E8D9CF0419}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A269AAD-EA11-4ED2-8CDE-74E8D9CF0419}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A269AAD-EA11-4ED2-8CDE-74E8D9CF0419}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C1E8BF9-C14A-4898-806D-5DC7D3F40A13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C1E8BF9-C14A-4898-806D-5DC7D3F40A13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C1E8BF9-C14A-4898-806D-5DC7D3F40A13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C1E8BF9-C14A-4898-806D-5DC7D3F40A13}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
