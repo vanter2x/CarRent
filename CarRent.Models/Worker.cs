@@ -6,6 +6,6 @@ namespace CarRent.Models
     {
         public AccountType AccountType { get; set; }
 
-        public virtual ICollection<Order> Order { get; set; }
+        public ICollection<Order> Orders { get; set; }
     }
 }

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
-using System.Reflection.Metadata;
 
 namespace CarRent.Models
 {
@@ -13,6 +12,6 @@ namespace CarRent.Models
         public string Color { get; set; }
         public int NumberOfDoors { get; set; }
             
-        public virtual Order Order { get; set; }
+        public Order Order { get; set; }
     }
 }
