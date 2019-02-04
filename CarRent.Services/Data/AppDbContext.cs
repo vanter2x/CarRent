@@ -1,10 +1,9 @@
 ﻿using CarRent.Models;
-using CarRent.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace CarRent.Web.Data
+namespace CarRent.Services.Data
 {
     public class AppDbContext: IdentityDbContext<IdentityUser>, IDbContext
     {
@@ -13,9 +12,9 @@ namespace CarRent.Web.Data
          
         }
 
-        public DbSet<Car> Cars { get; set; }
-        public DbSet<Worker> Workers { get; set; }  
-        public DbSet<Client> Clients { get; set; }
-        public DbSet<Order> Orders { get; set; }
+        public DbSet<Car> Cars { get ; set ; }
+        public DbSet<Worker> Workers { get; set ; }
+        public DbSet<Client> Clients { get ; set; }
+        public DbSet<Order> Orders { get ; set; }
     }
 }

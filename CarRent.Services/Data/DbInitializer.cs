@@ -2,7 +2,7 @@
 using CarRent.Models;
 using Microsoft.EntityFrameworkCore.Internal;
 
-namespace CarRent.Web.Data
+namespace CarRent.Services.Data
 {
     public static class DbInitializer
     {

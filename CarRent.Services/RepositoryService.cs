@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Linq.Expressions;
 using CarRent.Models;
+using CarRent.Services.Data;
 using Microsoft.EntityFrameworkCore;
 
 namespace CarRent.Services
@@ -37,7 +38,6 @@ namespace CarRent.Services
 
         public virtual ServiceResult Delete(T entity)
         {
-
             ServiceResult result = new ServiceResult();
 
             try

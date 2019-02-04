@@ -23,32 +23,44 @@ namespace CarRent.Web.Controllers
         {
             var cars = _carService.GetAll();
 
+            return View(cars);
+        }
+
+        public IActionResult Find()
+        {
+            var car = _carService.FindBy(x => x.Model == "Ford").Select(x => new CarVm(x)).AsQueryable();
+            return View(car);
+        }
+
+        public IActionResult AddCar()
+        {
+
             return View();
         }
 
-        public IActionResult About()
+        [HttpPost]
+        public IActionResult AddCar(CarVm carVm)
         {
-            ViewData["Message"] = "Your application description page.";
+            if (!ModelState.IsValid)
+            {
+                return View(carVm);
+            }
 
-            return View();
+            Car car = new Car
+            {
+                Model = carVm.Model,
+                Color = carVm.Color,
+                NumberOfDoors = carVm.NumberOfDoors,
+                ProductionDate = carVm  .ProductionDate
+            };
+
+            _carService.Add(car);
+            return RedirectToAction("Index");
         }
 
-        public IActionResult Contact()
-        {
-            ViewData["Message"] = "Your contact page.";
-
-            return View();
-        }
-
-        public IActionResult Privacy()
+        public IActionResult DeleteCar()
         {
             return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }

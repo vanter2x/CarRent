@@ -1,0 +1,31 @@
+﻿@model IQueryable<CarRent.Web.Models.CarVm>
+
+@{
+    ViewData["Title"] = "Find";
+}
+
+<h2>Find</h2>
+
+<div>
+    <table class="table">
+        <tr>
+            <td>Model</td>
+            <td>Production Date</td>
+            <td>color</td>
+            <td>Number of doors</td>
+        </tr>
+        @foreach (var car in Model)
+        {
+            <tr>
+                <td>@car.Model</td>
+                <td>@car.ProductionDate</td>
+                <td>@car.Color</td>
+                <td>@car.NumberOfDoors</td>
+            </tr>
+        }
+    </table>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>
