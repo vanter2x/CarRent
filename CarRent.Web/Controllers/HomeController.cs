@@ -31,11 +31,11 @@ namespace CarRent.Web.Controllers
         public IActionResult Index()
         {
             Car car = new Car() { Color = "Black", Model = "Opel" };
-            _carRepository.Add(car);
+            var x = _carRepository.Add(car);
             //return View();
 
-            Log.Information("Car Added");
-
+            Log.Information(x.ResultStatus.ToString());
+            
             return Ok(_carRepository.GetAll());
         }
 

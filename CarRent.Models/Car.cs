@@ -11,6 +11,7 @@ namespace CarRent.Models
         public DateTime ProductionDate { get; set; }
         public string Color { get; set; }
         public int NumberOfDoors { get; set; }
+        public decimal Price { get; set; }
             
         public Order Order { get; set; }
     }

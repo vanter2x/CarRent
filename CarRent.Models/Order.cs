@@ -12,9 +12,9 @@ namespace CarRent.Models
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public decimal TotalPrice { get; set; }
-
-        public virtual Worker Worker { get; set; }
-        public virtual Client Client { get; set; }
+        
+        public Worker Worker { get; set; }
+        public Client Client { get; set; }
         public ICollection<Car> Cars { get; set; }
     }
 }
